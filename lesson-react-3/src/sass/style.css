@@ -1,0 +1,25 @@
+.top-part {
+  padding: 20px;
+  display: flex;
+  justify-content: end;
+}
+.top-part .dropdown {
+  margin-right: 8px;
+}
+
+.umumi {
+  width: 100%;
+  height: auto;
+  background-color: pink;
+  display: flex;
+}
+.umumi .left-part {
+  width: 30%;
+  height: auto;
+  background-color: blue;
+}
+.umumi .right-part {
+  width: 70%;
+  height: auto;
+  background-color: red;
+}/*# sourceMappingURL=style.css.map */

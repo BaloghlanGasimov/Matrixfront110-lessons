@@ -1,0 +1,28 @@
+.top-part{
+    padding: 20px;
+    display: flex;
+    justify-content: end;
+    .dropdown{
+        margin-right: 8px;
+    }
+}
+
+.umumi{
+    width: 100%;
+    // height: 80vh;
+    height: auto;
+    background-color: pink;
+    display: flex;
+    .left-part{
+        width: 30%;
+        // height: 80vh;
+        height: auto;
+        background-color: blue;
+    }
+    .right-part{
+        width: 70%;
+        // height: 80vh;
+        height: auto;
+        background-color: red;
+    }
+}
