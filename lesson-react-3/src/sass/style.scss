@@ -26,3 +26,31 @@
         background-color: red;
     }
 }
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    .ortalama-90{
+        width: 90%;
+        display: flex;
+        border: 2px solid black;
+        .text-part{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 20px;
+            .name{
+                margin-bottom: 20px;
+                color:darkblue;
+                font-size: 30px;
+            }
+            .brand,.price{
+                margin-bottom: 15px;
+                
+                font-size: 20px;
+
+            }
+        }
+    }
+    
+}

@@ -22,4 +22,29 @@
   width: 70%;
   height: auto;
   background-color: red;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+.wrapper .ortalama-90 {
+  width: 90%;
+  display: flex;
+  border: 2px solid black;
+}
+.wrapper .ortalama-90 .text-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+.wrapper .ortalama-90 .text-part .name {
+  margin-bottom: 20px;
+  color: darkblue;
+  font-size: 30px;
+}
+.wrapper .ortalama-90 .text-part .brand, .wrapper .ortalama-90 .text-part .price {
+  margin-bottom: 15px;
+  font-size: 20px;
 }/*# sourceMappingURL=style.css.map */

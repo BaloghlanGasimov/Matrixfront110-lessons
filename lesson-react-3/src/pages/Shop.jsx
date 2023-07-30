@@ -69,17 +69,15 @@ const Shop = () => {
             </div>
             <div className="right-part">
                 
-                <div className="row g-3">
+                <div className="row">
 
-
-                    {data.map((item)=>{
-                        return(
-                            <SingleCard image={item.image} title={item.name} price={item.price} />
-                        )
-                    })}
+                {data.map((item)=>{
+                  return(
+                    <SingleCard key={item.id} alldata={item} id={item.id} image={item.image} title={item.name} price={item.price} />
+                  )
+                })}
 
                 </div>
-
             </div>
         </div>
         </div>

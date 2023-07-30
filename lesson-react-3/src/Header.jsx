@@ -1,7 +1,15 @@
 import React from 'react'
-
+import { CartProvider, useCart } from "react-use-cart";
 const Header = () => {
+  const {
+    isEmpty,
+    totalUniqueItems,
+    items,
+    updateItemQuantity,
+    removeItem,
+  } = useCart();
   return (
+    
     <div>
 
 <nav className="navbar navbar-expand-lg bg-dark navbar-dark">
@@ -50,17 +58,16 @@ const Header = () => {
            
         
       </ul>
-      <form className="d-flex" role="search">
-        <input
-          className="form-control me-2"
-          type="search"
-          placeholder="Search"
-          aria-label="Search"
-        />
+      <div className="d-flex">
+        
+        <a href="/cart">
+
         <button className="btn btn-outline-success" type="submit">
-          Search
+          Cart ({totalUniqueItems})
         </button>
-      </form>
+
+        </a>
+      </div>
     </div>
   </div>
 </nav>

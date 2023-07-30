@@ -68,3 +68,58 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+<div className="row g-3">
+
+
+                    {data.map((item)=>{
+                        return(
+                            <SingleCard image={item.image} title={item.name} price={item.price} />
+                        )
+                    })}
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                import React from 'react'
+
+const SingleCard = ({image,title,price}) => {
+  return (
+    <div className="col-12 col-md-4">
+
+        <div className="card">
+    <img src={image} className="card-img-top" alt="..." />
+    <div className="card-body">
+        <h5 className="card-title">{title}</h5>
+        <p className="card-text">
+        {price}
+        </p>
+        <a href="#" className="btn btn-primary">
+        Go somewhere
+        </a>
+    </div>
+    </div>
+</div>
+  )
+}
+
+export default SingleCard
